@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700;900&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    font-family: "Red Hat Display";
+    font-size: 16px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    min-height: 70vh;
+    max-width: 450px;
+    background-color: hsl(225, 100%, 98%);
+    margin-top: 120px;
+    border-radius: 25px;
+    box-shadow: 0 15px 18px rgba(145, 145, 145, 30%);
+}
+
+
+/* IMG */
+
+.img-container {
+    margin-bottom: 46px;
+}
+
+.img-container img {
+    border-radius: 25px 25px 0 0;
+}
+
+
+/* TEXT */
+
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 15px;
+}
+
+.text-container p {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 25px;
+    margin: 0 50px 30px 50px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+
+/* PLAN CONTAINER */
+
+.plan-container {
+    border: 1px solid hsla(225, 100%, 94%, 30%);
+    background-color: hsla(225, 100%, 94%, 30%);
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.plan-container img {
+    margin: 20px;
+    width: 100%;
+}
+
+.plan-container a {
+    margin: 0 20px 0 80px;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.plan-container p {
+    line-height: 26px;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan-container b {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+
+/* BUTTONS */
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.btn-pay {
+    margin-top: 25px;
+    border: 1px solid hsl(245, 75%, 52%);
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    padding: 15px 100px;
+    border-radius: 8px;
+    box-shadow: 0 15px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-cancel {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: hsl(224, 23%, 55%);
+}
+
+
+/* HOVER */
+
+.btn-pay:hover {
+    background-color: hsla(245, 75%, 52%, 70%);
+    border: 1px solid hsla(245, 75%, 52%, 70%);
+}
+
+.btn-cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.plan-container a:hover {
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 70%);
+}
+
+
+/* MEDIA */
+
+@media screen and (max-width: 450px) {
+    .main {
+        max-width: 380px;
+        margin-bottom: 120px;
+    }
+    .img-container img {
+        width: 100%;
+    }
+}
+
+.attribution {
+    font-size: 15px;
+    background: #111;
+    padding: 6px;
+    color: #fff;
+    text-align: middle;
+}
+
+.attribution span a {
+    color: crimson;
+    text-decoration: crimson;
+}
+
+.attribution span a:hover {
+    text-decoration: underline;
+}
