@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Ethan Payao</title>
+    <link rel="stylesheet" href="survey.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" />
+    </head>
+  <body>
+    <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/moqyrryz" method="post">
+        <fieldset id="fs-frm-inputs">
+          <label for="full-name">Full Name</label>
+          <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+          <label for="email-address">Email Address</label>
+          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+          <fieldset id="fs-frm-selects">
+            <label for="timely">1. The quality of work was high in quality.</label>
+            <select name="quality" id="quality" required="">
+              <option value="Choose" selected="" disabled="">Choose</option>
+              <option value="1">Strongly Agree</option>
+              <option value="3">Agree</option>
+              <option value="5">Neutral</option>
+              <option value="7">Disagree</option>
+              <option value="9">Strongly Disagree</option>
+            </select>
+          </fieldset>
+          <label for="message">Any Suggestions or Comments?</label>
+          <textarea rows="3" name="message" id="message" placeholder="Message..." required=""></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Survey Responses">
+        </fieldset>
+        <input type="submit" value="Send Responses">
+      </form>
+  </body>
+  <!-- footer section start -->
+<footer>
+    <span>Created By <a href="https://johnethanpayao.github.io">John Ethan Payao</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+</footer>
+</html>
